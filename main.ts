@@ -25,6 +25,8 @@ while (true) {
         basic.pause(100)
     } else {
         robotbit.StpCarMove(-10, 48)
+        robotbit.StepperDegree(robotbit.Steppers.M1, 90)
+        robotbit.StepperDegree(robotbit.Steppers.M2, -90)
         basic.pause(100)
     }
 }
